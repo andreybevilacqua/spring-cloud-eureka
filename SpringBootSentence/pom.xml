@@ -28,7 +28,7 @@
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-dependencies</artifactId>
-				<version>Finchley.RELEASE</version>
+				<version>Finchley.SR1</version>
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
@@ -58,6 +58,13 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<!--Spring Ribbon-->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-ribbon</artifactId>
+			<version>1.4.5.RELEASE</version>
 		</dependency>
 
 		<dependency>

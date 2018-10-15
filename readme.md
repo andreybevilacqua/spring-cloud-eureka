@@ -2,7 +2,9 @@
 
 ## Intro
 
-This is a project to practice the Spring Cloud Eureka and Ribbon. It uses Java 8, Maven, Spring Boot 2.0.5 and Spring Cloud 2.0.2.
+This is a project to practice the Spring Cloud Eureka and Ribbon.
+
+It uses Java 8, Maven, Spring Boot 2.0.5 and Spring Cloud 2.0.2.
 
 The server project is already configured to be able to start multiple servers (check `application.yml`file).
 
@@ -16,6 +18,7 @@ To startup, follow order below:
         - To use Ribbon it's necessary to run each client with a profile. To do so:
             - mvn spring-boot:run -Dspring.profiles.active=adjective
             - mvn spring-boot:run -Dspring.profiles.active=noun
+            - mvn spring-boot:run -Dspring.profiles.active=cold-noun
             - mvn spring-boot:run -Dspring.profiles.active=verb
             - mvn spring-boot:run -Dspring.profiles.active=article
             - mvn spring-boot:run -Dspring.profiles.active=subject  

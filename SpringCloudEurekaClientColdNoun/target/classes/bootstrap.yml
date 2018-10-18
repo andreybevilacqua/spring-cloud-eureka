@@ -4,8 +4,6 @@ spring:
   cloud:
     config:
       uri: http://localhost:8001 # Expect the Spring Cloud Config server to be running on localhost, port 8001.
-  application:
-    name: SpringCloudEurekaClientColdNoun
 
 # Allow Eureka to recognize two apps of the same type
 # on the same host as separate instances (see bonus step):

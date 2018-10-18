@@ -21,7 +21,7 @@ To startup, follow order below:
             - mvn spring-boot:run -Dspring.profiles.active=cold-noun
             - mvn spring-boot:run -Dspring.profiles.active=verb
             - mvn spring-boot:run -Dspring.profiles.active=article
-            - mvn spring-boot:run -Dspring.profiles.active=subject  
+            - mvn spring-boot:run -Dspring.profiles.active=subject
     - Spring Boot Sentence.
 
 Access `http://localhost:8020/sentence` to check the full sentence created.

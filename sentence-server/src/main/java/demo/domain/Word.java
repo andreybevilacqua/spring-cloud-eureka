@@ -5,7 +5,7 @@ package demo.domain;
  */
 public class Word {
 
-	public String word;
+	private String myWord;
 
 	public Word() {
 		super();
@@ -13,20 +13,15 @@ public class Word {
 	
 	public Word(String word) {
 		this();
-		this.word = word;
+		this.myWord = word;
 	}
 
-	public String getWord() {
-		return word;
+	public String getMyWord() {
+		return myWord;
 	}
 	
 	public String getString() {
-		return getWord();
+		return getMyWord();
 	}
 
-	public void setWord(String word) {
-		this.word = word;
-	}
-	
-	
 }

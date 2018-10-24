@@ -5,6 +5,6 @@ package demo.service;
  */
 public interface SentenceService {
 
-	public String buildSentence();
+	String buildSentence();
 
 }

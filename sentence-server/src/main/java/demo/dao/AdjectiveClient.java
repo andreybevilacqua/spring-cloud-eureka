@@ -6,9 +6,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 // Adjective
-@FeignClient(name = "SPRINGCLOUDEUREKACLIENTADJECTIVE")
+@FeignClient("ADJECTIVE")
 public interface AdjectiveClient {
 
     @RequestMapping(method = RequestMethod.GET, value = "/", produces = "application/json", consumes = "application/json")
     Word getWord();
+
 }

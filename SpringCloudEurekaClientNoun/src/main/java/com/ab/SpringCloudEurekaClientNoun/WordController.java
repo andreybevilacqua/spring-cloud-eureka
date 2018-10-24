@@ -5,6 +5,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.Random;
+
 @RestController
 public class WordController {
 
@@ -14,7 +16,7 @@ public class WordController {
     @GetMapping("/")
     public @ResponseBody String getWord(){
         String[] wordArray = words.split(",");
-        int i = (int) Math.round(Math.random() * (wordArray.length -1));
+        int i = new Random().nextInt(wordArray.length -1);
         return wordArray[i];
     }
 }

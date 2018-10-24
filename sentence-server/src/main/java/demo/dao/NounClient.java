@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 // Noun
-@FeignClient(name = "SPRINGCLOUDEUREKACLIENTNOUN")
+@FeignClient(name = "NOUN")
 public interface NounClient {
 
     @RequestMapping(method = RequestMethod.GET, value = "/", produces = "application/json", consumes = "application/json")

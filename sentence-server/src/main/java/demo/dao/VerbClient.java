@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 // Verb
-@FeignClient(name = "SPRINGCLOUDEUREKACLIENTVERB")
+@FeignClient(name = "VERB")
 public interface VerbClient {
 
     @RequestMapping(method = RequestMethod.GET, value = "/", produces = "application/json", consumes = "application/json")
